@@ -157,6 +157,8 @@
     flex-shrink: 0;
   }
   .board-avatar{width:72px;height:72px;border-radius:50%;background:var(--navy);margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;font-family:var(--ff-display);font-size:1.5rem;color:var(--gold);}
+  .board-avatar.club-seal-avatar{background:var(--white);border:1px solid var(--border);box-shadow:0 4px 14px rgba(10,22,40,0.08);padding:7px;overflow:hidden;}
+  .board-avatar.club-seal-avatar img{width:100%;height:100%;object-fit:contain;display:block;border-radius:50%;}
   .board-name{font-weight:600;font-size:0.9375rem;color:var(--navy);margin-bottom:0.25rem;}
   .board-role{font-size:0.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;font-weight:500;}
   .board-email{font-size:0.75rem;color:var(--blue);margin-top:0.5rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%;}
@@ -322,34 +324,34 @@
 
 <nav class="nav" id="nav">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo" aria-label="MO-ARK Circle K Home">
+    <a href="/" class="nav-logo" aria-label="MO-ARK Circle K Home">
       <img src="Images/CircleK-seal.png" alt="Circle K Logo" style="width:40px;height:40px;border-radius:50%;object-fit:cover;">
       <div class="nav-logo-text"><span class="nav-logo-name">MO-ARK District</span><span class="nav-logo-sub">Circle K International</span></div>
     </a>
     <ul class="nav-links" role="list">
       <li class="nav-item">
-        <a href="about.html" class="nav-link">About<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 4l4 4 4-4"/></svg></a>
-        <div class="nav-dropdown"><a href="about.html">About MO-ARK</a><a href="about.html#history">Our History</a><a href="about.html#mission">Mission &amp; Values</a><div class="nav-dropdown-divider"></div><a href="contact.html">Contact Us</a></div>
+        <a href="about" class="nav-link">About<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 4l4 4 4-4"/></svg></a>
+        <div class="nav-dropdown"><a href="about">About MO-ARK</a><a href="about#history">Our History</a><a href="about#mission">Mission &amp; Values</a><div class="nav-dropdown-divider"></div><a href="contact">Contact Us</a></div>
       </li>
       <li class="nav-item">
-        <a href="our-district.html" class="nav-link active">Our District<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 4l4 4 4-4"/></svg></a>
-        <div class="nav-dropdown"><a href="our-district.html#board">District Board</a><a href="our-district.html#clubs">Club Directory</a><a href="our-district.html#bylaws">District Bylaws</a></div>
+        <a href="our-district" class="nav-link active">Our District<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 4l4 4 4-4"/></svg></a>
+        <div class="nav-dropdown"><a href="our-district#board">District Board</a><a href="our-district#clubs">Club Directory</a><a href="our-district#bylaws">District Bylaws</a></div>
       </li>
-      <li><a href="resources.html" class="nav-link">Resources</a></li>
+      <li><a href="resources" class="nav-link">Resources</a></li>
       <li class="nav-item">
-        <a href="dcon.html" class="nav-link">Events<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 4l4 4 4-4"/></svg></a>
-        <div class="nav-dropdown"><a href="dcon.html">DCON 2027</a><a href="dcon.html#calendar">Event Calendar</a><a href="resources.html#forms">DCON Forms</a></div>
+        <a href="dcon" class="nav-link">Events<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 4l4 4 4-4"/></svg></a>
+        <div class="nav-dropdown"><a href="dcon">DCON 2027</a><a href="dcon#calendar">Event Calendar</a><a href="resources#forms">DCON Forms</a></div>
       </li>
-      <li><a href="contact.html" class="nav-cta nav-link">Contact Us</a></li>
+      <li><a href="contact" class="nav-cta nav-link">Contact Us</a></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div class="nav-mobile" id="navMobile">
-  <div class="nav-mobile-section">About</div><a href="about.html">About MO-ARK</a><a href="about.html#history">Our History</a><a href="about.html#mission">Mission &amp; Values</a>
-  <div class="nav-mobile-section">District</div><a href="our-district.html#board">District Board</a><a href="our-district.html#clubs">Club Directory</a><a href="our-district.html#bylaws">District Bylaws</a>
-  <div class="nav-mobile-section">Events &amp; Resources</div><a href="resources.html">Resources</a><a href="dcon.html">DCON 2027</a>
-  <div class="nav-mobile-section">Connect</div><a href="contact.html">Contact Us</a>
+  <div class="nav-mobile-section">About</div><a href="about">About MO-ARK</a><a href="about#history">Our History</a><a href="about#mission">Mission &amp; Values</a>
+  <div class="nav-mobile-section">District</div><a href="our-district#board">District Board</a><a href="our-district#clubs">Club Directory</a><a href="our-district#bylaws">District Bylaws</a>
+  <div class="nav-mobile-section">Events &amp; Resources</div><a href="resources">Resources</a><a href="dcon">DCON 2027</a>
+  <div class="nav-mobile-section">Connect</div><a href="contact">Contact Us</a>
 </div>
 
 <div class="page-header">
@@ -361,7 +363,7 @@
   </div>
 </div>
 
-<div class="breadcrumb"><div class="breadcrumb-inner"><a href="index.html">Home</a><span class="breadcrumb-sep">›</span><span>Our District</span></div></div>
+<div class="breadcrumb"><div class="breadcrumb-inner"><a href="/">Home</a><span class="breadcrumb-sep">›</span><span>Our District</span></div></div>
 
 <div class="section-tabs">
   <div class="section-tabs-inner">
@@ -378,7 +380,7 @@
     <p class="section-desc">The Missouri-Arkansas District Board leads the district. Board members are elected annually at DCON and serve throughout the year.</p>
   </div>
   <div class="board-intro">
-    <p>The district board is responsible for leading all clubs in the district. Board meetings are held throughout the service year where members discuss the district bylaws, work in committees, and plan the District Convention. For more information about DCON, <a href="dcon.html" style="color:var(--blue);font-weight:600;">visit the DCON page.</a></p>
+    <p>The district board is responsible for leading all clubs in the district. Board meetings are held throughout the service year where members discuss the district bylaws, work in committees, and plan the District Convention. For more information about DCON, <a href="dcon" style="color:var(--blue);font-weight:600;">visit the DCON page.</a></p>
   </div>
 
   <!-- ── BOARD PHOTO STRIP ── -->
@@ -418,12 +420,12 @@
           <!-- BACK ROW -->
           <span data-cx="503"  data-cy="205" data-rx="68" data-ry="93"  data-side="top"    data-name="Rahul Awasthi"           data-role="Webmaster"></span>
           <span data-cx="610"  data-cy="191" data-rx="68" data-ry="93"  data-side="top"    data-name="Abraham Ireland"         data-role="Treasurer"></span>
-          <span data-cx="734"  data-cy="200" data-rx="68" data-ry="93"  data-side="top"    data-name="Nandu Rakesh Nair"       data-role="Editor"></span>
-          <span data-cx="887"  data-cy="201" data-rx="68" data-ry="93"  data-side="top"    data-name="Omar Vargas Garcia"      data-role="Secretary"></span>
-          <span data-cx="989"  data-cy="201" data-rx="68" data-ry="93"  data-side="right"  data-name="Dakota Menning"          data-role="Governor"></span>
+          <span data-cx="734"  data-cy="200" data-rx="68" data-ry="93"  data-side="top"    data-name="Taylor Von Wolfseck"     data-role="Editor"></span>
+          <span data-cx="887"  data-cy="201" data-rx="68" data-ry="93"  data-side="top"    data-name="Hailey Bagby"            data-role="Secretary-Treasurer"></span>
+          <span data-cx="989"  data-cy="201" data-rx="68" data-ry="93"  data-side="right"  data-name="Russel Haynes"           data-role="Governor"></span>
           <span data-cx="1111" data-cy="188" data-rx="68" data-ry="93"  data-side="right"  data-name="Amara Miles"             data-role="Div. 9 Lt. Governor"></span>
           <!-- FRONT ROW -->
-          <span data-cx="100"  data-cy="431" data-rx="60" data-ry="122" data-side="left"   data-name="Cheryl Anderson"         data-role="District Administrator"></span>
+          <span data-cx="100"  data-cy="431" data-rx="60" data-ry="122" data-side="left"   data-name="Paula Staten O'Connell"  data-role="District Administrator"></span>
           <span data-cx="224"  data-cy="414" data-rx="65" data-ry="128" data-side="left"   data-name="Miranda Young"           data-role="Adult Staff"></span>
           <span data-cx="377"  data-cy="414" data-rx="65" data-ry="128" data-side="left"   data-name="Andy Santizo"            data-role="Div. 8 Lt. Governor"></span>
           <span data-cx="494"  data-cy="430" data-rx="65" data-ry="128" data-side="bottom" data-name="Savanna Scruggs"         data-role="Div. 1 Lt. Governor"></span>
@@ -458,7 +460,7 @@
   <div class="board-group-title">District Officers</div>
   <p style="font-size:0.875rem;color:var(--muted);margin-bottom:1.5rem;">These are the elected officers of the MO-ARK District of Circle K International.</p>
   <div class="board-grid" id="exec-grid">
-    <div class="board-card fade-in" data-img="Board Photos/GOV.png" style="cursor:pointer;" onclick="window.location='exec-profile.html?id=governor'">
+    <div class="board-card fade-in" data-img="Board Photos/GOV.png" style="cursor:pointer;" onclick="window.location='exec-profile?id=governor'">
       <div class="board-card-inner">
         <div class="board-card-front">
           <div class="board-avatar">G</div>
@@ -474,7 +476,7 @@
         </div>
       </div>
     </div>
-    <div class="board-card fade-in" data-img="Board Photos/SEC.png" style="cursor:pointer;" onclick="window.location='exec-profile.html?id=secretary'">
+    <div class="board-card fade-in" data-img="Board Photos/SEC.png" style="cursor:pointer;" onclick="window.location='exec-profile?id=secretary'">
       <div class="board-card-inner">
         <div class="board-card-front">
           <div class="board-avatar">S</div>
@@ -490,7 +492,7 @@
         </div>
       </div>
     </div>
-    <div class="board-card fade-in" data-img="Board Photos/EDI.png" style="cursor:pointer;" onclick="window.location='exec-profile.html?id=editor'">
+    <div class="board-card fade-in" data-img="Board Photos/EDI.png" style="cursor:pointer;" onclick="window.location='exec-profile?id=editor'">
       <div class="board-card-inner">
         <div class="board-card-front">
           <div class="board-avatar">E</div>
@@ -514,7 +516,7 @@
     <div class="board-card fade-in">
       <div class="board-card-inner">
         <div class="board-card-front">
-          <div class="board-avatar" style="background:#E74C3C;">LU</div>
+          <div class="board-avatar club-seal-avatar"><img src="Images/Lindenwood_University_seal.svg" alt="Lindenwood University seal"></div>
           <div class="board-name">Lindenwood University</div>
           <div class="board-role">St. Charles, MO</div>
           <div class="board-email"></div>
@@ -524,7 +526,7 @@
     <div class="board-card fade-in">
       <div class="board-card-inner">
         <div class="board-card-front">
-          <div class="board-avatar" style="background:#8E44AD;">MSU</div>
+          <div class="board-avatar club-seal-avatar"><img src="Images/Missouri_State_University_Seal.svg" alt="Missouri State University seal"></div>
           <div class="board-name">Missouri State University</div>
           <div class="board-role">Springfield, MO</div>
           <div class="board-email"></div>
@@ -534,7 +536,7 @@
     <div class="board-card fade-in">
       <div class="board-card-inner">
         <div class="board-card-front">
-          <div class="board-avatar" style="background:#27AE60;">UCA</div>
+          <div class="board-avatar club-seal-avatar"><img src="Images/University_of_Central_Arkansas_seal.svg.webp" alt="University of Central Arkansas seal"></div>
           <div class="board-name">University of Central Arkansas</div>
           <div class="board-role">Conway, AR</div>
           <div class="board-email"></div>
@@ -544,7 +546,7 @@
     <div class="board-card fade-in">
       <div class="board-card-inner">
         <div class="board-card-front">
-          <div class="board-avatar" style="background:#F39C12;">MU</div>
+          <div class="board-avatar club-seal-avatar"><img src="Images/University of Missouri seal.jpeg" alt="University of Missouri seal"></div>
           <div class="board-name">University of Missouri</div>
           <div class="board-role">Columbia, MO</div>
           <div class="board-email"></div>
@@ -554,7 +556,7 @@
     <div class="board-card fade-in">
       <div class="board-card-inner">
         <div class="board-card-front">
-          <div class="board-avatar" style="background:#2980B9;">WU</div>
+          <div class="board-avatar club-seal-avatar"><img src="Images/WashU seal.jpeg" alt="Washington University seal"></div>
           <div class="board-name">Washington University</div>
           <div class="board-role">St. Louis, MO</div>
           <div class="board-email"></div>
@@ -564,7 +566,7 @@
     <div class="board-card fade-in">
       <div class="board-card-inner">
         <div class="board-card-front">
-          <div class="board-avatar" style="background:#1ABC9C;">TRC</div>
+          <div class="board-avatar club-seal-avatar"><img src="Images/Three Rivers College seal.jpg" alt="Three Rivers College seal"></div>
           <div class="board-name">Three Rivers College</div>
           <div class="board-role">Poplar Bluff, MO</div>
           <div class="board-email"></div>
@@ -576,7 +578,7 @@
   <div class="board-group-title">District Administrator</div>
   <p style="font-size:0.875rem;color:var(--muted);margin-bottom:1.5rem;">Our district administrator mentors the board and ensures operations follow Kiwanis International standards.</p>
   <div class="board-grid" style="grid-template-columns:repeat(3,1fr);" id="staff-grid">
-    <div class="board-card fade-in" data-img="Board Photos/AS1.png" style="cursor:pointer;" onclick="window.location='adult-profile.html?id=as1'">
+    <div class="board-card fade-in" data-img="Board Photos/AS1.jpeg" style="cursor:pointer;" onclick="window.location='adult-profile?id=as1'">
       <div class="board-card-inner">
         <div class="board-card-front">
           <div class="board-avatar" style="background:var(--blue);">P</div>
@@ -666,26 +668,26 @@
       <div class="footer-col">
         <h4>About</h4>
         <ul>
-          <li><a href="about.html">About MO-ARK</a></li>
-          <li><a href="about.html#history">Our History</a></li>
-          <li><a href="about.html#mission">Mission &amp; Values</a></li>
-          <li><a href="our-district.html#board">District Board</a></li>
+          <li><a href="about">About MO-ARK</a></li>
+          <li><a href="about#history">Our History</a></li>
+          <li><a href="about#mission">Mission &amp; Values</a></li>
+          <li><a href="our-district#board">District Board</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Events</h4>
         <ul>
-          <li><a href="dcon.html#calendar">Event Calendar</a></li>
-          <li><a href="dcon.html">DCON 2027</a></li>
+          <li><a href="dcon#calendar">Event Calendar</a></li>
+          <li><a href="dcon">DCON 2027</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Resources</h4>
         <ul>
-          <li><a href="resources.html#club">Club Resources</a></li>
-          <li><a href="our-district.html#clubs">Club Directory</a></li>
-          <li><a href="our-district.html#bylaws">District Bylaws</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="resources#club">Club Resources</a></li>
+          <li><a href="our-district#clubs">Club Directory</a></li>
+          <li><a href="our-district#bylaws">District Bylaws</a></li>
+          <li><a href="contact">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -697,7 +699,7 @@
         <a href="https://www.unicefusa.org" target="_blank" rel="noopener" class="footer-partner" title="UNICEF — preferred charity"><img src="Images/UNICEF Logo.png" alt="UNICEF"></a>
         <a href="https://www.activeminds.org" target="_blank" rel="noopener" class="footer-partner" title="Active Minds — mental health awareness"><img src="Images/ActiveMindsFooter.png" alt="Active Minds"></a>
         <a href="https://www.nature.org" target="_blank" rel="noopener" class="footer-partner" title="The Nature Conservancy — environmental conservation"><img src="Images/NatureConservancyFooter.svg" alt="The Nature Conservancy"></a>
-        <a href="https://www.circlek.org" target="_blank" rel="noopener" class="footer-partner" title="Circle K International"><img src="Images/Circle K Logo.png" alt="Circle K International"></a>
+        <a href="https://www.circlek.org" target="_blank" rel="noopener" class="footer-partner" title="Circle K International"><img src="Images/CircleK-seal.png" alt="Circle K International"></a>
       </div>
     </div>
 

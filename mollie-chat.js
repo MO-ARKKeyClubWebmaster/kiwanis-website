@@ -237,14 +237,14 @@
     .then(function(r) { return r.json(); })
     .then(function(data) {
       showTyping(false);
-      var text = data.reply || "Shoot, I hit a snag! Try the [Contact page](https://www.moarkcki.com/contact.html) for direct help.";
+      var text = data.reply || "Shoot, I hit a snag! Try the [Contact page](https://www.moarkcki.com/contact) for direct help.";
       history.push({ role: 'user',  parts: [{ text: q }] });
       history.push({ role: 'model', parts: [{ text: text }] });
       addMsg(text, 'mollie', true);
     })
     .catch(function() {
       showTyping(false);
-      addMsg("Yikes, something went wrong. Try the [Contact page](https://www.moarkcki.com/contact.html) for direct help!", 'mollie', true);
+      addMsg("Yikes, something went wrong. Try the [Contact page](https://www.moarkcki.com/contact) for direct help!", 'mollie', true);
     });
   };
 

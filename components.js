@@ -16,17 +16,17 @@ const BANNER_CONFIG = {
     {
       icon: '📋',
       text: 'Officer Applications are due in <strong>14 days</strong> — don\'t miss your chance to lead!',
-      link: { label: 'Apply Now', href: '/resources.html' },
+      link: { label: 'Apply Now', href: '/resources' },
     },
     {
       icon: '🏆',
       text: '<strong>DCON 2027</strong> registration opens soon — secure your spot early.',
-      link: { label: 'Learn More', href: '/dcon.html' },
+      link: { label: 'Learn More', href: '/dcon' },
     },
     {
       icon: '📋',
       text: 'Check out our <strong>charities and programs</strong> — preferred charities, foundations, and more.',
-      link: { label: 'Explore', href: '/programs-charities.html' },
+      link: { label: 'Explore', href: '/programs-charities' },
     },
   ],
 
