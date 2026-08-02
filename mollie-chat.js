@@ -7,6 +7,8 @@
 (function() {
   'use strict';
 
+  var MOLLIE_WORKER_URL = window.MOLLIE_WORKER_URL || 'https://ask-mollie.kiwanis-paula.workers.dev/';
+
   function init() {
 
   /* ── INJECT STYLES ── */
@@ -154,7 +156,7 @@
         '<button class="mc-chip" onclick="window.mcAsk(\'Where are the DCON registration forms?\')">📋 DCON forms</button>',
         '<button class="mc-chip" onclick="window.mcAsk(\'Who is the district governor?\')">👤 Governor</button>',
         '<button class="mc-chip" onclick="window.mcAsk(\'Where are the officer guidebooks?\')">📚 Guidebooks</button>',
-        '<button class="mc-chip" onclick="window.mcAsk(\'How do I submit monthly reports?\')">📊 Monthly reports</button>',
+        '<button class="mc-chip" onclick="window.mcAsk(\'How do I pay membership dues?\')">💳 Membership dues</button>',
         '<button class="mc-chip" onclick="window.mcAsk(\'When is ICON 2026?\')">🌐 ICON 2026</button>',
       '</div>',
 
@@ -229,7 +231,7 @@
       return { role: h.role === 'model' ? 'assistant' : h.role, content: h.parts[0].text };
     });
 
-    fetch('https://mollie-ai.moarkcki.workers.dev', {
+    fetch(MOLLIE_WORKER_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ message: q, history: msgs })

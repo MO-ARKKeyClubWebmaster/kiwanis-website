@@ -31,7 +31,6 @@
     { title: 'Preferred Charities',        url: 'programs-charities#charities',  cat: 'Section', kw: 'preferred charities unicef x-hunger active minds nature conservancy' },
     { title: 'Programs & Foundations',     url: 'programs-charities#programs',   cat: 'Section', kw: 'programs yof youth opportunities fund glc global leadership certificate tomorrow fund earl collins foundation' },
     { title: 'DCON 2027',                  url: 'dcon',                   cat: 'Event',    kw: 'dcon district convention 2027 march circle k' },
-    { title: 'DCON 2027 Theme: Route 66',   url: 'dcon',                   cat: 'Event',    kw: 'route 66 theme dcon 2027 district convention august 24 reveal' },
     { title: 'Event Calendar',             url: 'dcon#calendar',          cat: 'Event',    kw: 'event calendar dates board meetings conferences dcon' },
     { title: 'Contact Us',                 url: 'contact',                cat: 'Page',     kw: 'contact email reach out webmaster question feedback' },
     { title: "Paula Staten O'Connell",      url: 'adult-profile?id=as1',   cat: 'Page',     kw: 'district administrator paula staten oconnell kiwanis.paula@gmail.com adult staff' },
